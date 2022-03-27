@@ -4,7 +4,8 @@ void initPerso(Personne *p) {
 	int i,j;
 	// image
 	p->image = IMG_Load("spritsheet-nesrine.png");
-
+	p->score = 0;
+	p->life = 3;
 	// rect
 	for (i = 0; i < 8; i++)
 	{
@@ -21,7 +22,7 @@ void initPerso(Personne *p) {
 	}
 	// pos
 	p->pos.x = 100;
-	p->pos.y = 100;
+	p->pos.y = 375;
 
 	// animation
 	p->animation = 0;
